@@ -159,4 +159,4 @@ Dependencies: Make sure to install all dependencies and check for version compat
 
 ## License
 
-This project is licensed under the [GNUV3](LICENSE).
+This project is licensed under the [GPL3](LICENSE).
