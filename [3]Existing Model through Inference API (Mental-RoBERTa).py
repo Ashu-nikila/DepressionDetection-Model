@@ -97,7 +97,7 @@ def evaluate_model(predictions, labels):
 
 def make_api_request (model_name, input_text,label_no_depression):
   url = f"https://api-inference.huggingface.co/models/{model_name}"
-  headers = {"Authorization": f"Bearer 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"}
+  headers = {"Authorization": f"Bearer <add hugging face token>"}
   prediction = 0 #set default to no depression
   response = requests.post(url, headers=headers, json={"inputs": input_text})
   #print (input_text)
@@ -168,6 +168,7 @@ notebook_login(input("Enter your API token: "))
 # Load your dataset from Hugging Face
 # Replace 'dataset_name' with the name of your dataset
 raw_datasets = load_dataset("nikilas/DepressionIncludingImageText", use_auth_token=True)
+# you can also use the data multimidal_dataset.csv in the data folder in github
 
 raw_datasets = raw_datasets.rename_column('text', 'old_text')
 #print(raw_datasets.keys())
