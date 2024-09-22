@@ -247,6 +247,7 @@ notebook_login(input("Enter your API token: "))
 
 # Load the dataset
 raw_datasets = load_dataset("nikilas/DepressionIncludingImageText", use_auth_token=True)
+#instead of loading it from hugging face, we can also use the fule multimodal_dataset.csv from the data folder in the github
 #print(raw_datasets.keys())
 
 # Filter the dataset for stress and depression classes
