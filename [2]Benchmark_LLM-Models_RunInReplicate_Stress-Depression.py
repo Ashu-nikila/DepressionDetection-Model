@@ -243,11 +243,10 @@ def save_stress_confusion_matrix_plot(cm, title, file_name):
 # Manually authenticate with the Hugging Face API
 print("Please authenticate with the Hugging Face API:")
 notebook_login(input("Enter your API token: "))
-#token: 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
 
 # Load the dataset
 raw_datasets = load_dataset("nikilas/DepressionIncludingImageText", use_auth_token=True)
-#instead of loading it from hugging face, we can also use the fule multimodal_dataset.csv from the data folder in the github
+#instead of loading it from hugging face, we can also use the file multimodal_dataset.csv from the data folder in the github
 #print(raw_datasets.keys())
 
 # Filter the dataset for stress and depression classes
@@ -363,11 +362,9 @@ plt.show()
 # get a token: https://replicate.com/account
 # install replicate client using "!pip install replicate"
 #REPLICATE_API_TOKEN = getpass()
-REPLICATE_API_TOKEN ="r8_Nv2gM1ybgolpjgWqEi8uwGZsILNqxVU0ALtb3"
+REPLICATE_API_TOKEN = <Add your token>
 os.environ["REPLICATE_API_TOKEN"] = REPLICATE_API_TOKEN
 #token for replicate
-#r8_IIHG7hbkTN0No13c5QcwxqKPIQYidDu1kZitY(paid)
-#r8_Nv2gM1ybgolpjgWqEi8uwGZsILNqxVU0ALtb3(paid)
 
 # Define the name of the log file
 log_file_name = "/content/my_log_file_new.txt"
@@ -644,7 +641,6 @@ with open(log_file_name, "a") as log_file:
 
   print(results)
   log_file.write(f"\nResults of {model_names[index_model]}; {results}\n")
-
 
 
 #####Manual Confusion matrix creation using the data collected######
