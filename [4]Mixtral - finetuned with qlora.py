@@ -73,11 +73,11 @@ log_file_name = "my_log_file_4.txt"
 # Manually authenticate with the Hugging Face API
 #print("Please authenticate with the Hugging Face API")
 #notebook_login(input("Enter your API token: "))
-#token: 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
 
 # Load dataset
 raw_datasets = load_dataset("nikilas/DepressionIncludingImageText", use_auth_token=True)
 #print(raw_datasets.keys())
+#can use the multimodal_dataset.csv from the data folder in the github
 
 # Rename column 'text' to 'old_text'
 raw_datasets = raw_datasets.rename_column('text', 'old_text')
