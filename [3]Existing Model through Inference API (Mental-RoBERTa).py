@@ -163,7 +163,6 @@ log_file_name = "/content/my_log_file.txt"
 # Manually authenticate with the Hugging Face API
 print("Please authenticate with the Hugging Face API:")
 notebook_login(input("Enter your API token: "))
-#token: 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
 
 # Load your dataset from Hugging Face
 # Replace 'dataset_name' with the name of your dataset
