@@ -1,3 +1,7 @@
+MentalDisorderDetetion is licensed under the GNU General Public License v3.0. Copyright (C) 2024 Nikila Swaminathan
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
 ##Multimodal Mental Health Detection
 
 This repository contains Python scripts related to a project on detecting mental health conditions (specifically depression and stress) among adolescents using multimodal deep learning techniques. The project leverages both text and image data from social media to improve the accuracy of detection.
